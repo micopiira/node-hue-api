@@ -118,7 +118,8 @@ HueApi.prototype.fullState = HueApi.prototype.getFullState;
 HueApi.prototype.registerUser = function (host, deviceDescription, cb) {
     var options = {
             host: host,
-            values: {}
+            values: {},
+            ssl: true
         }
         , devicetype = "Node.js API"
         , promise
